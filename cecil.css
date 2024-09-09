@@ -1,0 +1,163 @@
+/* CSS Variable Section */
+
+/* TODO: Find 'normal' colorscheme for everything here. Dropdown, btn everything */
+
+/* END OF CSS VARIABLE SECTION */
+
+/* Universal Classes */
+
+.standalone-link {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+/* END of Universal Classes */
+
+/* Button Classes */
+
+.btn {
+  background-color: white;
+  cursor: pointer;
+  padding: 6px 12px;
+  margin: 2px;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+}
+
+.btn-action {
+  background-color: #007BFF;
+}
+
+/* Dropdown Classes using ordered/unordered lists and items as the dropdown-content */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-btn {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  margin: 0px;
+  list-style: none;
+  display: none;
+  position: absolute;
+  min-width: 120px;
+  padding: 12px 8px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Dropdown events */
+
+.dropdown:hover .dropdown-btn { background-color: #F9F9F9; }
+
+.dropdown-content li:hover { background-color: #F9F9F9; }
+
+.dropdown:hover .dropdown-content { display: block; }
+
+/* End of Dropdown Classes */
+
+/* Margin Classes */
+
+.m5 {
+  margin: 5px;
+}
+
+.m10 {
+  margin: 10px;
+}
+
+.ml5 {
+  margin-left: 5px;
+}
+
+.ml10 {
+  margin-left: 10px;
+}
+
+.mr5 {
+  margin-right: 5px;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+
+.mt5 {
+  margin-top: 5px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.mb5 {
+  margin-bottom: 5px;
+}
+
+.mb5 {
+  margin-bottom: 5px;
+}
+
+/* Padding Classes */
+
+.p5 {
+  padding: 5px;
+}
+
+.p10 {
+  padding: 10px;
+}
+
+.pl5 {
+  padding-left: 5px;
+}
+
+.pl10 {
+  padding-left: 10px;
+}
+
+.pr5 {
+  padding-right: 5px;
+}
+
+.pr10 {
+  padding-right: 10px;
+}
+
+.pt5 {
+  padding-top: 5px;
+}
+
+.pt10 {
+  padding-top: 10px;
+}
+
+.pb5 {
+  padding-bottom: 5px;
+}
+
+.pb5 {
+  padding-bottom: 5px;
+}
+
+/* Floating Classes */
+.pull-left {
+  float: left;
+}
+
+.clear-float {
+  clear: both;
+}

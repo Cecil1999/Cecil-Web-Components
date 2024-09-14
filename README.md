@@ -17,3 +17,7 @@ I would really _STRONGLY_ recommend that you don't.
 ## Could I use it?
 
 Be my guest. I appreciate anyone who would actually consider using this. However, just use Bootstrap or Tailwind instead.
+
+## No Javascript?
+
+I'm going to try strictly using HTML/CSS, as I don't really love working with Javascript.

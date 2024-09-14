@@ -14,6 +14,34 @@
 
 /* END of Universal Classes */
 
+
+
+/* Accordion Classes */
+
+.accordion {
+  text-decoration: none;
+  background-color: #DDD;
+  padding: .75rem 0 .75rem 0;
+  border: 1px solid #AAA;
+  border-radius: .25rem;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.accordion[open] {
+  padding: .75rem 0 0 0;
+}
+
+.accordion-panel {
+  font-weight: normal;
+  padding: .5rem;
+  background-color: #EEE;
+  border: 1px solid #BBB;
+  font-size: 1rem;
+}
+
+/* END of Accordion Classes */
+
 /* Button Classes */
 
 .btn {
@@ -163,8 +191,8 @@
   margin-bottom: 5px;
 }
 
-.mb5 {
-  margin-bottom: 5px;
+.mb10 {
+  margin-bottom: 10px;
 }
 
 /* Padding Classes */

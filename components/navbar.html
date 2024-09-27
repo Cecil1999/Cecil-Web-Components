@@ -1,41 +1,42 @@
-<div class="navbar">
-  <div class="pull-left p10">
+<link rel="stylesheet" href="/home/cecil/Documents/github-projects/Cecil-Web-Components/cecil.css"/>
+<div class="container container-verti container-nowrap space-between">
+  <div class="p10">
     <!-- Either use <p> or span with text-size styles. -->
     <span>Navbar title</span>
   </div>
 
   <!-- Dropdown Example, with lists, and items. -->
-  <div class="dropdown pull-left mr10">
-    <button class="dropdown-btn p10">Menu Dropdown 1</button>
-    <ul class="dropdown-content" role="menu">
-      <li><a href="#">item 1</a></li>
-      <li><a href="#">item 2</a></li>
-      <li><a href="#">item 3</a></li>
-      <li><a href="#">item 4</a></li>
-      <li><a href="#">item 5</a></li>
-    </ul>
-  </div>
-
-  <!-- Dropdown Example, without lists, and items. -->
-  <div class="dropdown pull-left mr10">
-    <button class="dropdown-btn p10">Menu Dropdown 2</button>
-    <div class="dropdown-content">
-      <a href="#">item 1</a>
-      <a href="#">item 2</a>
-      <a href="#">item 3</a>
-      <a href="#">item 4</a>
-      <a href="#">item 5</a>
+  <div class="container gap10 space-between">
+    <div class="dropdown">
+      <button class="dropdown-btn p10">Menu Dropdown 1</button>
+      <ul class="dropdown-content" role="menu">
+        <li><a href="#">item 1</a></li>
+        <li><a href="#">item 2</a></li>
+        <li><a href="#">item 3</a></li>
+        <li><a href="#">item 4</a></li>
+        <li><a href="#">item 5</a></li>
+      </ul>
     </div>
-  </div>
 
-  <!-- Straight Button Example -->
-  <div class="pull-left mr10 p10">
-    <a href="#" class="standalone-link">Link Here</a>
+    <!-- Dropdown Example, without lists, and items. -->
+    <div class="dropdown pull-left">
+      <button class="dropdown-btn p10">Menu Dropdown 2</button>
+      <div class="dropdown-content">
+        <a href="#">item 1</a>
+        <a href="#">item 2</a>
+        <a href="#">item 3</a>
+        <a href="#">item 4</a>
+        <a href="#">item 5</a>
+      </div>
+    </div>
+
+    <!-- Straight Button Example -->
+    <div class="pull-left p10">
+      <a href="#" class="standalone-link">Link Here</a>
+    </div>
   </div>
 
   <div class="mr10">
     <button class="btn btn-action">X Action</button>
   </div>
-
-  <div class="clear-float"></div>
 </div>

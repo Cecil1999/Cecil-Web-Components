@@ -424,7 +424,125 @@
 
 /* End of Flex (grid) classes */
 
+/* Color classes */
+
+.white {
+  color: white;
+}
+
+.black {
+  color: black;
+}
+
+.background-white {
+  background-color: #FFFFFF;
+}
+
+.background-black {
+  background-color: #000000;
+}
+
+.background-red {
+  background-color: #FF0000;
+}
+
+.background-green {
+  background-color: #008000;
+}
+
+.background-blue {
+  background-color: #0000FF;
+}
+
+.background-yellow {
+  background-color: #FFFF00;
+}
+
+.background-cyan {
+  background-color: #00FFFF;
+}
+
+.background-magenta {
+  background-color: #FF00FF;
+}
+
+.background-lightgrey {
+  background-color: #D3D3D3;
+}
+
+.background-grey {
+  background-color: #B2B2B2;
+}
+
+.background-darkergrey {
+  background-color: #808080;
+}
+
+.background-darkgrey {
+  background-color: #939393;
+}
+
+.background-aliceblue {
+  background-color: #F0F8FF;
+}
+
+.background-coral {
+  background-color: #FF7F50;
+}
+
+.background-lime {
+  background-color: #00FF00;
+}
+
+.background-orange {
+  background-color: #FFA500;
+}
+
+.background-pink {
+  background-color: #FFC0CB;
+}
+
+.background-violent {
+  background-color: #EE82EE;
+}
+
+.background-beige {
+  background-color: #F5F5DC;
+}
+
+.background-ivory {
+  background-color: #FFFFF0;
+}
+
+.background-tan {
+  background-color: #D2B48C;
+}
+
+.background-navy {
+  background-color: #000080;
+}
+
+.background-maroon {
+  background-color: #800000;
+}
+
+.background-forest-green {
+  background-color: #228B22;
+}
+
+.border-color-grey {
+  border-color: #BBB;
+}
+
+.border-color-darkgrey {
+  border-color: #757574;
+}
+
+/* End of color classes (bg) */
+
+
 /* Floating Classes */
+
 .pull-left {
   float: left;
 }

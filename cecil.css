@@ -5,6 +5,11 @@
 /* END OF CSS VARIABLE SECTION */
 
 /* Universal Classes */
+
+.mw140 {
+  max-width: 140px;
+}
+
 .border {
   border: solid;
 }
@@ -21,7 +26,6 @@
 }
 
 /* END of Universal Classes */
-
 
 /* Accordion Classes */
 
@@ -68,6 +72,7 @@
   line-height .5;
   border-radius: .3rem;
 }
+i
 .btn-lg {
   padding: .5rem 1rem;
   font-size: 1.25rem;
@@ -120,6 +125,10 @@
   border: .1rem solid #007BFF;
 }
 
+.btn:hover.btn-action {
+  background-color: #0085DA;
+}
+
 /* Dropdown Classes using ordered/unordered lists and items as the dropdown-content */
 
 .dropdown {
@@ -133,14 +142,32 @@
   cursor: pointer;
 }
 
+.dropdown-btn.dark {
+  background-color: #707070;
+}
+
+.dropdown-btn.light {
+  background-color: #DDDDDD;
+}
+
 .dropdown-content {
+  width: 100%;
   margin: 0px;
   list-style: none;
+  font-size: .9rem;
   display: none;
   position: absolute;
-  min-width: 120px;
-  padding: 12px 8px;
+  padding: 0px;
   z-index: 1;
+  box-shadow: 0 5px 5px #666666;
+}
+
+.dropdown-content.dark {
+  background-color: #808080;
+}
+
+.dropdown-content.dp-white {
+  background-color: #EDEDED;
 }
 
 .dropdown-content a {
@@ -150,11 +177,22 @@
   display: block;
 }
 
+.dropdown-content.dark a {
+  color: white;
+}
 /* Dropdown events */
 
-.dropdown:hover .dropdown-btn { background-color: #F9F9F9; }
+.dropdown:hover .dropdown-btn { background-color: #C2C2C2; }
 
-.dropdown-content li:hover { background-color: #F9F9F9; }
+.dropdown-content li:hover { background-color: #C2C2C2; }
+
+.dropdown:hover .dropdown-btn.dark { background-color: #909090; }
+
+.dropdown-content.dark li:hover { background-color: #909090; }
+
+.dropdown:hover .dropdown-btn.dp-white { background-color: #D1D1D1; }
+
+.dropdown-content.dp-white li:hover { background-color: #D1D1D1; }
 
 .dropdown:hover .dropdown-content { display: block; }
 
@@ -474,12 +512,8 @@
   background-color: #B2B2B2;
 }
 
-.background-darkergrey {
-  background-color: #808080;
-}
-
 .background-darkgrey {
-  background-color: #939393;
+  background-color: #808080;
 }
 
 .background-aliceblue {

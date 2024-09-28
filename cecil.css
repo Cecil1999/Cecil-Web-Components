@@ -72,7 +72,7 @@
   line-height .5;
   border-radius: .3rem;
 }
-i
+
 .btn-lg {
   padding: .5rem 1rem;
   font-size: 1.25rem;
@@ -125,8 +125,52 @@ i
   border: .1rem solid #007BFF;
 }
 
+.btn:hover.btn-default {
+  background-color: #9E9E9E;
+}
+
+.btn:active.btn-default {
+  background-color: #6C6C6C;
+}
+
 .btn:hover.btn-action {
   background-color: #0085DA;
+}
+
+.btn:active.btn-action {
+  background-color: #0056B3;
+}
+
+.btn:hover.btn-danger {
+  background-color: #DB5757;
+}
+
+.btn:active.btn-danger {
+  background-color: #D32F2F;
+}
+
+.btn:hover.btn-safe {
+  background-color: #28A443;
+}
+
+.btn:active.btn-safe {
+  background-color: #218838;
+}
+
+.btn:hover.btn-safe {
+  background-color: #28A443;
+}
+
+.btn:active.btn-safe {
+  background-color: #218838;
+}
+
+.btn:hover.btn-info {
+  background-color: #3388FF;
+}
+
+.btn:active.btn-info {
+  background-color: #006BFF;
 }
 
 /* Dropdown Classes using ordered/unordered lists and items as the dropdown-content */

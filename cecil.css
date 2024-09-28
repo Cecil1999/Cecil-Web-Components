@@ -5,6 +5,11 @@
 /* END OF CSS VARIABLE SECTION */
 
 /* Universal Classes */
+
+.mw140 {
+  max-width: 140px;
+}
+
 .border {
   border: solid;
 }
@@ -21,7 +26,6 @@
 }
 
 /* END of Universal Classes */
-
 
 /* Accordion Classes */
 
@@ -68,6 +72,7 @@
   line-height .5;
   border-radius: .3rem;
 }
+
 .btn-lg {
   padding: .5rem 1rem;
   font-size: 1.25rem;
@@ -120,6 +125,54 @@
   border: .1rem solid #007BFF;
 }
 
+.btn:hover.btn-default {
+  background-color: #9E9E9E;
+}
+
+.btn:active.btn-default {
+  background-color: #6C6C6C;
+}
+
+.btn:hover.btn-action {
+  background-color: #0085DA;
+}
+
+.btn:active.btn-action {
+  background-color: #0056B3;
+}
+
+.btn:hover.btn-danger {
+  background-color: #DB5757;
+}
+
+.btn:active.btn-danger {
+  background-color: #D32F2F;
+}
+
+.btn:hover.btn-safe {
+  background-color: #28A443;
+}
+
+.btn:active.btn-safe {
+  background-color: #218838;
+}
+
+.btn:hover.btn-safe {
+  background-color: #28A443;
+}
+
+.btn:active.btn-safe {
+  background-color: #218838;
+}
+
+.btn:hover.btn-info {
+  background-color: #3388FF;
+}
+
+.btn:active.btn-info {
+  background-color: #006BFF;
+}
+
 /* Dropdown Classes using ordered/unordered lists and items as the dropdown-content */
 
 .dropdown {
@@ -133,14 +186,32 @@
   cursor: pointer;
 }
 
+.dropdown-btn.dark {
+  background-color: #707070;
+}
+
+.dropdown-btn.light {
+  background-color: #DDDDDD;
+}
+
 .dropdown-content {
+  width: 100%;
   margin: 0px;
   list-style: none;
+  font-size: .9rem;
   display: none;
   position: absolute;
-  min-width: 120px;
-  padding: 12px 8px;
+  padding: 0px;
   z-index: 1;
+  box-shadow: 0 5px 5px #666666;
+}
+
+.dropdown-content.dark {
+  background-color: #808080;
+}
+
+.dropdown-content.dp-white {
+  background-color: #EDEDED;
 }
 
 .dropdown-content a {
@@ -150,11 +221,22 @@
   display: block;
 }
 
+.dropdown-content.dark a {
+  color: white;
+}
 /* Dropdown events */
 
-.dropdown:hover .dropdown-btn { background-color: #F9F9F9; }
+.dropdown:hover .dropdown-btn { background-color: #C2C2C2; }
 
-.dropdown-content li:hover { background-color: #F9F9F9; }
+.dropdown-content li:hover { background-color: #C2C2C2; }
+
+.dropdown:hover .dropdown-btn.dark { background-color: #909090; }
+
+.dropdown-content.dark li:hover { background-color: #909090; }
+
+.dropdown:hover .dropdown-btn.dp-white { background-color: #D1D1D1; }
+
+.dropdown-content.dp-white li:hover { background-color: #D1D1D1; }
 
 .dropdown:hover .dropdown-content { display: block; }
 
@@ -424,7 +506,121 @@
 
 /* End of Flex (grid) classes */
 
+/* Color classes */
+
+.white {
+  color: white;
+}
+
+.black {
+  color: black;
+}
+
+.background-white {
+  background-color: #FFFFFF;
+}
+
+.background-black {
+  background-color: #000000;
+}
+
+.background-red {
+  background-color: #FF0000;
+}
+
+.background-green {
+  background-color: #008000;
+}
+
+.background-blue {
+  background-color: #0000FF;
+}
+
+.background-yellow {
+  background-color: #FFFF00;
+}
+
+.background-cyan {
+  background-color: #00FFFF;
+}
+
+.background-magenta {
+  background-color: #FF00FF;
+}
+
+.background-lightgrey {
+  background-color: #D3D3D3;
+}
+
+.background-grey {
+  background-color: #B2B2B2;
+}
+
+.background-darkgrey {
+  background-color: #808080;
+}
+
+.background-aliceblue {
+  background-color: #F0F8FF;
+}
+
+.background-coral {
+  background-color: #FF7F50;
+}
+
+.background-lime {
+  background-color: #00FF00;
+}
+
+.background-orange {
+  background-color: #FFA500;
+}
+
+.background-pink {
+  background-color: #FFC0CB;
+}
+
+.background-violent {
+  background-color: #EE82EE;
+}
+
+.background-beige {
+  background-color: #F5F5DC;
+}
+
+.background-ivory {
+  background-color: #FFFFF0;
+}
+
+.background-tan {
+  background-color: #D2B48C;
+}
+
+.background-navy {
+  background-color: #000080;
+}
+
+.background-maroon {
+  background-color: #800000;
+}
+
+.background-forest-green {
+  background-color: #228B22;
+}
+
+.border-color-grey {
+  border-color: #BBB;
+}
+
+.border-color-darkgrey {
+  border-color: #757574;
+}
+
+/* End of color classes (bg) */
+
+
 /* Floating Classes */
+
 .pull-left {
   float: left;
 }

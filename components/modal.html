@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="/home/cecil/Documents/github-projects/Cecil-Web-Components/cecil.css"/>
+
+<div>
+  <a href="#css-modal" id="modal-btn" class="btn btn-action standalone-link">Open Modal</a>
+</div>
+
+<div id="css-modal" class="modal">
+  <div class="modal-header">
+    <h3>Modal Title</h3>
+    <a class="modal-close standalone-link btn btn-action" href="#">Exit Modal</a>
+  </div>
+  <div class="modal-window">
+    <p>Modal Window Popup</p>
+    <p>Modal Window Popup</p>
+    <p>Modal Window Popup</p>
+    <p>Modal Window Popup</p>
+    <p>Modal Window Popup</p>
+    <p>Modal Window Popup</p>
+    <p>Modal Window Popup</p>
+    <p>Modal Window Popup</p>
+    <p>Modal Window Popup</p>
+  </div>
+  <div class="modal-footer"> 
+    <a class="modal-close standalone-link btn btn-action" href="#">Exit Modal</a>
+  </div>
+</div>
+<!-- Optional JS + Click anywhere gets rid of the modal. -->
+<!--
+<script>
+const modal      = document.getElementById('css-modal');
+const btn        = document.getElementById('modal-btn');
+const close_btns = Object.values(document.getElementsByClassName('modal-close'));
+
+modal.style.visibility = 'hidden';
+
+close_btns.forEach((ele) => {
+  ele.addEventListener('click', (event) => {
+    event.stopPropagation();
+    modal.style.visibility = 'hidden';
+  })
+})
+
+btn.addEventListener('click', (event) => {
+  event.stopPropagation();
+  modal.style.visibility = 'visible';
+});
+
+window.onclick = (event) => {
+  if (window.getComputedStyle(modal).visibility === 'visible') {
+    if (event.target === modal || modal.contains(event.target))
+      return;
+  }
+
+  modal.style.visibility = 'hidden';
+}
+</script>
+-->

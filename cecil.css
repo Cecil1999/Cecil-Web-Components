@@ -49,6 +49,63 @@
 
 /* END of Accordion Classes */
 
+/* Begin of Modal Classes */
+
+.modal {
+  width: 40vw;
+  max-height: 70vh;
+  position: fixed;
+  padding 2rem;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  border: 1px solid #000;
+  box-shadow: 0px 10px 8px #000;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 250ms ease-out,
+        opacity 250ms ease-out;
+}
+
+#css-modal:target {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-lg {
+  width: 70vw;
+  max-height: 80vh;
+}
+
+.modal-header {
+  position: relative;
+  padding: 1.25em 1em;
+  background-color: #E9E9E9;
+  border-bottom: 1px solid #000;
+}
+
+.modal-header > h3 { /* h3 is the most common can edit this to be whatever */
+  margin: 0;
+}
+
+.modal-window {
+  position: relative;
+  background-color: white;
+  padding: .5em 1em;
+  max-height: 40vh; overflow-y: auto;
+}
+
+.modal-footer {
+  position: relative;
+  background-color: #E9E9E9;
+  padding: 2em 1em;
+  border-top: 1px solid #000;
+}
+
+.modal-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
 /* Button Classes */
 
 .btn {

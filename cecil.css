@@ -106,6 +106,64 @@
   top: 10px;
 }
 
+/* Badge Classes */
+
+.badge-notification {
+  background-color: white;
+  margin: 2px;
+  padding: 0px 2px;
+  color: black;
+  border-radius: .25rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: .25rem .4rem;
+  font-size: 75%;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: .25rem;
+}
+
+.badge-pill {
+  display: inline-block;
+  padding: .25rem .4rem;
+  font-size: 75%;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: .5rem;
+}
+
+.badge-default {
+  background-color: #6C6C6C;
+  color: white;
+}
+
+.badge-action {
+  background-color: #0056B3;
+  color: white;
+}
+
+.badge-danger {
+  background-color: #D32F2F;
+  color: white;
+}
+
+.badge-safe {
+  background-color: #218838;
+  color: white;
+}
+
+.badge-info {
+  background-color: #007BFF;
+  color: white;
+}
+
+/* End of Badge Classes */
+
+
 /* Button Classes */
 
 .btn {

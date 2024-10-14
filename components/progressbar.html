@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="/home/cecil/Documents/github-projects/Cecil-Web-Components/cecil.css"/>
+
+<button type="button" class="btn btn-action" id="reset_btn">
+  Restart Animation  
+</button>
+
+<div class="progress-bar">
+  <div class="progress-bar-blue-purple" id="test-progress-bar"></div>
+</div>
+
+<script>
+const reset_btn    = document.getElementById('reset_btn');
+const progress_bar = document.getElementById('test-progress-bar');
+
+reset_btn.addEventListener('click', (event) => {
+  progress_bar.classList.remove('progress-bar-timelasp');
+  
+  setTimeout(() => {
+    progress_bar.classList.add('progress-bar-timelasp');
+  }, 500);
+})
+</script>

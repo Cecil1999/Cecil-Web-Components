@@ -109,12 +109,11 @@
 
 /* Progress Bar */
 
-.progress-bar {
+.pill-progress-bar {
   width: 500px;
   height: 40px;
-  display: inline-block;
+  display: block;
   border-radius: 2rem;
-  border: 1px solid #000;
   background-color: black;
   color: white;
   text-align: center;
@@ -122,13 +121,13 @@
   overflow: hidden;
 }
 
-.progress-bar-blue-purple {
+.pill-progress-bar-blue {
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, #4A90E2 0%, #9013FE 100%);
+  background: linear-gradient(to right, #9EC2FF 0%, #212AA5 100%);
 }
 
-.progress-bar-timelasp {
+.pill-progress-bar-timelasp {
   animation-name: timelapse;
   animation-fill-mode: forwards;
   animation-duration: 2s;
@@ -141,6 +140,52 @@
   }
   100% {
     width: 100%;
+  }
+}
+
+.square-progress-bar {
+  display: block;
+  border-radius: .5rem;
+  width: 600px;
+  height: 20px;
+  background-color: #DDD;
+  overflow: hidden;
+}
+
+.square-progress-bar-blue {
+  width: 4rem;
+  height: 20px;
+  border-radius: .25rem;
+  position: relative;
+  background-color: blue;
+  animation: loadingbar linear 2s infinite alternate;
+}
+
+@keyframes loadingbar {
+  0% {
+    left: 0;
+    background-color: blue;
+    width: 4rem;
+  }
+  25% {
+    left: calc(25% - 4rem);
+    background-color: #B65BF5;
+    width: 4.5rem;
+  }
+  50% {
+    left: calc(50% - 4.5rem);
+    background-color: #F33878;
+    width: 5.5rem;
+  }
+  75% {
+    left: calc(75% - 5.5rem);
+    background-color: #B65BF5;
+    width: 4.5rem;
+  }
+  100% {
+    left: calc(100% - 4.5rem);
+    background-color: blue;
+  
   }
 }
 

@@ -1,0 +1,29 @@
+<h3></h3>
+
+<button type="button" class="btn btn-action" id="reset_btn">
+  Restart Animation  
+</button>
+
+<div class="pill-progress-bar">
+  <div class="pill-progress-bar-blue" id="test-progress-bar">
+  </div>
+</div>
+
+<div class="clear-float"></div>
+
+<div class="square-progress-bar mt10">
+  <div class="square-progress-bar-blue" id="square-progress-bar"></div>
+</div>
+
+<script>
+const reset_btn    = document.getElementById('reset_btn');
+const progress_bar = document.getElementById('test-progress-bar');
+
+reset_btn.addEventListener('click', (event) => {
+  progress_bar.classList.remove('pill-progress-bar-timelasp');
+  
+  setTimeout(() => {
+    progress_bar.classList.add('pill-progress-bar-timelasp');
+  }, 750);
+})
+</script>

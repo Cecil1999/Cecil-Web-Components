@@ -53,6 +53,257 @@
 
 /* END of Accordion Classes */
 
+/* Begin of Card Classess */
+
+.card {
+  word-wrap: break-word;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  background-clip: border-box;
+  border: 1px solid #A9A9A9;
+  border-radius: .75rem;
+  overflow: hidden;
+}
+
+.card-title {
+  padding: .5rem .75rem;
+  margin-bottom: .25rem;
+  font-size: 1.25rem;
+}
+
+.card > .header {
+  background-color: #D9D9D9;
+  font-size: 1.50rem;
+}
+
+.card-image {
+  width: `100px;
+  display: block;
+  color: white;
+  background-color: grey;
+  text-align: center;
+  border-top-left-radius: calc(.25rem - 1px);
+  border-top-right-radius: calc(.25rem - 1px);
+}
+
+.card-subtitle {
+  color : #A9A9A9;
+  padding: .25rem .75rem;
+  margin-bottom: .5rem;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: .5rem .75rem;
+}
+
+/* End of Card Classess */
+
+
+
+
+/* Begin of Modal Classes */
+
+.modal {
+  width: 40vw;
+  max-height: 70vh;
+  position: fixed;
+  padding 2rem;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  border: 1px solid #000;
+  box-shadow: 0px 10px 8px #000;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 250ms ease-out,
+        opacity 250ms ease-out;
+}
+
+#css-modal:target {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-lg {
+  width: 70vw;
+  max-height: 80vh;
+}
+
+.modal-header {
+  position: relative;
+  padding: 1.25em 1em;
+  background-color: #E9E9E9;
+  border-bottom: 1px solid #000;
+}
+
+.modal-header > h3 { /* h3 is the most common can edit this to be whatever */
+  margin: 0;
+}
+
+.modal-window {
+  position: relative;
+  background-color: white;
+  padding: .5em 1em;
+  max-height: 40vh; overflow-y: auto;
+}
+
+.modal-footer {
+  position: relative;
+  background-color: #E9E9E9;
+  padding: 2em 1em;
+  border-top: 1px solid #000;
+}
+
+.modal-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+/* End of Modal Classes */
+
+/* Progress Bar */
+
+.pill-progress-bar {
+  width: 500px;
+  height: 40px;
+  display: block;
+  border-radius: 2rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.pill-progress-bar-blue {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #9EC2FF 0%, #212AA5 100%);
+}
+
+.pill-progress-bar-timelasp {
+  animation-name: timelapse;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(.86, .05, .4, .96);
+}
+
+@keyframes timelapse {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.square-progress-bar {
+  display: block;
+  border-radius: .5rem;
+  width: 600px;
+  height: 20px;
+  background-color: #DDD;
+  overflow: hidden;
+}
+
+.square-progress-bar-blue {
+  width: 4rem;
+  height: 20px;
+  border-radius: .25rem;
+  position: relative;
+  background-color: blue;
+  animation: loadingbar linear 2s infinite alternate;
+}
+
+@keyframes loadingbar {
+  0% {
+    left: 0;
+    background-color: blue;
+    width: 4rem;
+  }
+  25% {
+    left: calc(25% - 4rem);
+    background-color: #B65BF5;
+    width: 4.5rem;
+  }
+  50% {
+    left: calc(50% - 4.5rem);
+    background-color: #F33878;
+    width: 5.5rem;
+  }
+  75% {
+    left: calc(75% - 5.5rem);
+    background-color: #B65BF5;
+    width: 4.5rem;
+  }
+  100% {
+    left: calc(100% - 4.5rem);
+    background-color: blue;
+  
+  }
+}
+
+/* End of Progress Bar */
+
+/* Badge Classes */
+
+.badge-notification {
+  background-color: white;
+  margin: 2px;
+  padding: 0px 2px;
+  color: black;
+  border-radius: .25rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: .25rem .4rem;
+  font-size: 75%;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: .25rem;
+}
+
+.badge-pill {
+  display: inline-block;
+  padding: .25rem .4rem;
+  font-size: 75%;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: .5rem;
+}
+
+.badge-default {
+  background-color: #6C6C6C;
+  color: white;
+}
+
+.badge-action {
+  background-color: #0056B3;
+  color: white;
+}
+
+.badge-danger {
+  background-color: #D32F2F;
+  color: white;
+}
+
+.badge-safe {
+  background-color: #218838;
+  color: white;
+}
+
+.badge-info {
+  background-color: #007BFF;
+  color: white;
+}
+
+/* End of Badge Classes */
+
+
 /* Button Classes */
 
 .btn {
